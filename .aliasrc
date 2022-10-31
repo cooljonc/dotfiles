@@ -1,0 +1,11 @@
+# .aliasrc
+
+# Set aliases that don't use sudo &/or privelege escalation
+alias ls='exa -g --color=auto'
+alias la='exa -ag --color=auto'
+alias ll='exa -agl --color=auto'
+
+# Set aliases that use sudo &/or privelege escalation
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
+alias locate='sudo updatedb && locate'
