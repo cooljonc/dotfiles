@@ -1,0 +1,42 @@
+{
+    "code-runner.enableAppInsights": false,
+    "code-runner.runInTerminal": true,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'monospace', monospace",
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.lightbulb.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "all",
+    "explorer.confirmDelete": false,
+    "Lua.telemetry.enable": false,
+    "[lua]": {
+        "editor.defaultFormatter": "sumneko.lua"
+    },
+    "prettier.tabWidth": 4,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "update.mode": "none",
+    "workbench.colorCustomizations": {
+        "[Iceberg]": {
+            "editorGutter.background": "#161821",
+            "editorOverviewRuler.border": "#181b2800",
+            "sideBarSectionHeader.background": "#161821",
+            "statusBar.background": "#161821",
+            "statusBar.noFolderBackground": "#161821"
+        }
+    },
+    "workbench.colorTheme": "Iceberg",
+    "workbench.startupEditor": "none",
+    "window.customMenuBarAltFocus": false,
+    "---": "---"
+}
