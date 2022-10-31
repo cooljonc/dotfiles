@@ -1,0 +1,7 @@
+# nano config (nanorc)
+set atblanks
+set autoindent
+set linenumbers
+set minibar
+set softwrap
+set tabsize 4
