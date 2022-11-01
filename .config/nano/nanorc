@@ -3,5 +3,6 @@ set atblanks
 set autoindent
 set linenumbers
 set minibar
+set nohelp
 set softwrap
 set tabsize 4
