@@ -1,4 +1,4 @@
 #!/bin/sh
 (return 2>/dev/null) && return
 DOTFILES_DIR="$(dirname -- "$(dirname -- "$(readlink -f -- "$0")")")"
-git --git-dir="$DOTFILES_DIR/.git" --work-tree="$DOTFILES_DIR" $@
+git --git-dir="$DOTFILES_DIR/.git" --work-tree="$DOTFILES_DIR" "$@"
