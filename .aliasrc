@@ -4,6 +4,7 @@
 alias ls='exa -g --color=auto'
 alias la='exa -ag --color=auto'
 alias ll='exa -agl --color=auto'
+alias l.='exa -dg .* --color=auto'
 
 # Set aliases that use sudo &/or privelege escalation
 alias poweroff='sudo poweroff'
