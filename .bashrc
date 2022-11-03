@@ -1,7 +1,10 @@
 # .bashrc
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# If not running interactively, don't do anything!
+case "$-" in
+	*i*) ;;
+	*) (return 2>/dev/null) && return || exit 0 ;;
+esac
 
 # Everything else below here! :|
 
