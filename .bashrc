@@ -14,8 +14,11 @@ esac
 # Source .aliasrc
 [ -f ~/.aliasrc ] && . ~/.aliasrc
 
-# Set bash HISTFILE location
+# Set bash history settings
+HISTCONTROL=""
 HISTFILE="$HOME/.local/share/bash_history"
+HISTFILESIZE=""
+HISTSIZE=""
 
 # Set prompt(s)
 PS1='[\u@\h \W]\$ '
