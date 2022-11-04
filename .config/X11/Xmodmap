@@ -1,1 +1,5 @@
 ! Xmodmap
+
+! Replace Caps_Lock with Escape
+clear lock
+keycode 66 = Escape NoSymbol Escape
