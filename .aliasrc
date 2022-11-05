@@ -1,6 +1,7 @@
 # .aliasrc
 
 # Set aliases that don't use sudo &/or privelege escalation
+alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ls='exa -g --color=auto'
 alias la='exa -ag --color=auto'
