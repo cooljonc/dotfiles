@@ -107,7 +107,3 @@ upgrade = true
 [flatpak]
 # Use sudo for updating the system-wide installation
 #use_sudo = true
-
-[distrobox]
-#use_root = false
-#containers = ["archlinux-latest"]
