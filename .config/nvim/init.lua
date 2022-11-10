@@ -33,76 +33,58 @@ vim.opt.title = true
 vim.opt.visualbell = false
 vim.opt.wrap = true
 
--- ensure packer.nvim is installed, otherwise install & bootstrap packer.nvim
-local ensure_packer = function()
-	local install_path = vim.fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-	if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-		vim.fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-		vim.cmd [[packadd packer.nvim]]
-		return true
-	end
-	return false
-end
+-- packer.nvim plugins specification
+require('plugins')
 
-local packer_bootstrap = ensure_packer()
+-- automatically run :PackerSync when packer.nvim plugins specification is updated
+vim.cmd([[
+	augroup packer_user_config
+		autocmd!
+		autocmd BufWritePost plugins.lua source <afile> | PackerSync
+	augroup end
+]])
 
--- packer.nvim plugins specification & configuration
-return require('packer').startup(function()
-	-- packer can manage itself
-	use 'wbthomason/packer.nvim'
+-- colorscheme
+vim.cmd[[colorscheme iceberg]]
 
-	-- colorscheme
-	use 'cocopon/iceberg.vim'
-	vim.cmd[[colorscheme iceberg]]
-
-	-- lualine
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons' }
-	}
-	require('lualine').setup {
-		options = {
-			icons_enabled = true,
-			theme = 'iceberg',
-			component_separators = { left = '', right = ''},
-			section_separators = { left = '', right = ''},
-			disabled_filetypes = {
-				statusline = {},
-				winbar = {},
-			},
-			ignore_focus = {},
-			always_divide_middle = true,
-			globalstatus = false,
-			refresh = {
-				statusline = 1000,
-				tabline = 1000,
-				winbar = 1000,
-			}
+-- lualine
+require('lualine').setup {
+	options = {
+		icons_enabled = true,
+		theme = 'iceberg',
+		component_separators = { left = '', right = ''},
+		section_separators = { left = '', right = ''},
+		disabled_filetypes = {
+			statusline = {},
+			winbar = {},
 		},
-		sections = {
-			lualine_a = {'mode'},
-			lualine_b = {'branch', 'diff', 'diagnostics'},
-			lualine_c = {'filename'},
-			lualine_x = {'encoding', 'fileformat', 'filetype'},
-			lualine_y = {'progress'},
-			lualine_z = {'location'}
-		},
-		inactive_sections = {
-			lualine_a = {},
-			lualine_b = {},
-			lualine_c = {'filename'},
-			lualine_x = {'location'},
-			lualine_y = {},
-			lualine_z = {}
-		},
-		tabline = {},
-		winbar = {},
-		inactive_winbar = {},
-		extensions = {}
-	}
-
-	-- automatically set up configuration after bootstrapping packer.nvim
-	if packer_bootstrap then
-		require('packer').sync()
-	end
-end)
+		ignore_focus = {},
+		always_divide_middle = true,
+		globalstatus = false,
+		refresh = {
+			statusline = 1000,
+			tabline = 1000,
+			winbar = 1000,
+		}
+	},
+	sections = {
+		lualine_a = {'mode'},
+		lualine_b = {'branch', 'diff', 'diagnostics'},
+		lualine_c = {'filename'},
+		lualine_x = {'encoding', 'fileformat', 'filetype'},
+		lualine_y = {'progress'},
+		lualine_z = {'location'}
+	},
+	inactive_sections = {
+		lualine_a = {},
+		lualine_b = {},
+		lualine_c = {'filename'},
+		lualine_x = {'location'},
+		lualine_y = {},
+		lualine_z = {}
+	},
+	tabline = {},
+	winbar = {},
+	inactive_winbar = {},
+	extensions = {}
+}
