@@ -185,7 +185,7 @@ colors:
         # present. If the bright foreground color is not set, or
         # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
         # color will be used.
-        dim_foreground: '#d2d4de'
+        dim_foreground: '#c6c8d1'
         bright_foreground: '#d2d4de'
 
     # Cursor colors
