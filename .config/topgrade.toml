@@ -1,3 +1,5 @@
+# topgrade config (topgrade.toml)
+
 # Don't ask for confirmations
 assume_yes = false
 
