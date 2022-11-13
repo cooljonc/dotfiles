@@ -24,8 +24,7 @@ HISTSIZE=""
 PS1='[\u@\h \W]\$ '
 PS2='> '
 if [ "$TERM" != 'linux' ]; then
-	PS1='\[\e[0m\]█\[\e[0;1;7m\]\w\[\e[0m\]█\[\e[0m\]\[\e[0m\] \[\e[0m\]'
-	PS2='\[\e[0m\]█\[\e[0m\]\[\e[0m\] \[\e[0m\]'
+	eval "$(starship init bash)"
 fi
 
 # Set tabsize
