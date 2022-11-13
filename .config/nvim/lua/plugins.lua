@@ -18,10 +18,10 @@ return require('packer').startup(function()
 	-- packer can manage itself
 	use 'wbthomason/packer.nvim'
 
-	-- colorscheme
+	-- colorscheme (iceberg.vim)
 	use 'cocopon/iceberg.vim'
 
-	-- lualine
+	-- lualine.nvim
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' }

@@ -44,42 +44,50 @@ vim.cmd([[
 	augroup end
 ]])
 
--- colorscheme
+-- colorscheme (iceberg.vim)
 vim.cmd[[colorscheme iceberg]]
 
--- lualine
+-- lualine.nvim
 require('lualine').setup {
 	options = {
-		icons_enabled = true,
-		theme = 'iceberg',
-		component_separators = { left = '', right = ''},
-		section_separators = { left = '', right = ''},
+		always_divide_middle = true,
+		component_separators = '│',
 		disabled_filetypes = {
 			statusline = {},
-			winbar = {},
+			winbar = {}
 		},
-		ignore_focus = {},
-		always_divide_middle = true,
 		globalstatus = false,
+		icons_enabled = true,
+		ignore_focus = {},
 		refresh = {
 			statusline = 1000,
 			tabline = 1000,
 			winbar = 1000,
-		}
+		},
+		section_separators = { left = '', right = '' },
+		theme = 'iceberg'
 	},
 	sections = {
-		lualine_a = {'mode'},
-		lualine_b = {'branch', 'diff', 'diagnostics'},
-		lualine_c = {'filename'},
-		lualine_x = {'encoding', 'fileformat', 'filetype'},
-		lualine_y = {'progress'},
-		lualine_z = {'location'}
+		lualine_a = {
+			{ 'mode', separator = { left = '', right = '' }, padding = 0 }
+		},
+		lualine_b = {
+			{ 'branch', separator = { right = '' }, padding = { left = 1, right = 0 } }
+		},
+		lualine_c = { 'filename' },
+		lualine_x = { 'encoding', 'fileformat', 'filetype' },
+		lualine_y = {
+			{ 'progress', separator = { left = '' }, padding = { left = 0, right = 1 } }
+		},
+		lualine_z = {
+			{ 'location', separator = { left = '', right = '' }, padding = 0 }
+		}
 	},
 	inactive_sections = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = {'filename'},
-		lualine_x = {'location'},
+		lualine_c = { 'filename' },
+		lualine_x = { 'location' },
 		lualine_y = {},
 		lualine_z = {}
 	},
