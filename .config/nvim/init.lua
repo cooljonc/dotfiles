@@ -19,7 +19,7 @@ vim.opt.mousehide = true
 vim.opt.mouseshape = "n:arrow,v:beam,i:beam,r:beam"
 vim.opt.number = true
 vim.opt.preserveindent = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.scrolloff = 1
 vim.opt.shiftround = false
 vim.opt.shiftwidth = 4
@@ -64,24 +64,16 @@ require('lualine').setup {
 			tabline = 1000,
 			winbar = 1000,
 		},
-		section_separators = { left = '', right = '' },
+		section_separators = '',
 		theme = 'iceberg'
 	},
 	sections = {
-		lualine_a = {
-			{ 'mode', separator = { left = '', right = '' }, padding = 0 }
-		},
-		lualine_b = {
-			{ 'branch', separator = { right = '' }, padding = { left = 1, right = 0 } }
-		},
+		lualine_a = { 'mode' },
+		lualine_b = { 'branch' },
 		lualine_c = { 'filename' },
 		lualine_x = { 'encoding', 'fileformat', 'filetype' },
-		lualine_y = {
-			{ 'progress', separator = { left = '' }, padding = { left = 0, right = 1 } }
-		},
-		lualine_z = {
-			{ 'location', separator = { left = '', right = '' }, padding = 0 }
-		}
+		lualine_y = { 'progress' },
+		lualine_z = { 'location' }
 	},
 	inactive_sections = {
 		lualine_a = {},
