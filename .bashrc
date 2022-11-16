@@ -31,6 +31,6 @@ fi
 tabs -4
 
 # Cool neofetch or something :)
-#if [ "$TERM" != 'linux' ]; then
-#	neofetch
-#fi
+if [ "$TERM" != 'linux' ]; then
+	neofetch
+fi
