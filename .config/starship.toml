@@ -4,7 +4,17 @@ add_newline = false
 
 continuation_prompt = ' '
 
-format='$cmd_duration$git_branch$directory'
+format='$character$cmd_duration$git_branch$directory'
+
+[character]
+error_symbol = '[](bright-red)[!](fg:black bg:bright-red)[](bright-red) '
+success_symbol = ''
+vimcmd_replace_one_symbol = ''
+vimcmd_replace_symbol = ''
+vimcmd_symbol = ''
+vimcmd_visual_symbol = ''
+format = '$symbol'
+disabled = false
 
 [cmd_duration]
 style  = 'fg:black bg:bright-yellow bold'
