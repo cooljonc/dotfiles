@@ -7,7 +7,7 @@ continuation_prompt = ' '
 format='$character$cmd_duration$git_branch$directory'
 
 [character]
-error_symbol = '[](bright-red)[!](fg:black bg:bright-red)[](bright-red) '
+error_symbol = '[](red)[!](fg:black bg:red bold)[](red) '
 success_symbol = ''
 vimcmd_replace_one_symbol = ''
 vimcmd_replace_symbol = ''
@@ -17,8 +17,8 @@ format = '$symbol'
 disabled = false
 
 [cmd_duration]
-style  = 'fg:black bg:bright-yellow bold'
-format = '[](bright-yellow)[$duration]($style)[](bright-yellow) '
+style  = 'fg:black bg:yellow bold'
+format = '[](yellow)[$duration]($style)[](yellow) '
 min_time = 2000
 min_time_to_notify = 45000
 #notification_timeout = 
@@ -27,9 +27,9 @@ show_notifications = false
 disabled = false
 
 [git_branch]
-style = 'fg:black bg:bright-purple'
+style = 'fg:black bg:purple'
 symbol = ''
-format = '[](bright-purple)[$symbol $branch(:$remote_branch)]($style)[](bright-purple) '
+format = '[](purple)[$symbol $branch(:$remote_branch)]($style)[](purple) '
 always_show_remote = false
 ignore_branches = []
 only_attached = false
