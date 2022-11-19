@@ -18,4 +18,5 @@ xset dpms 0 0 0
 xset -dpms
 
 # Start DE/WM
-exec qtile start
+export DESKTOP_SESSION=plasma
+exec startplasma-x11
