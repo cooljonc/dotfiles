@@ -31,13 +31,13 @@ no_retry = false
 #tmux_arguments = "-S /var/tmux.sock"
 
 # Do not set the terminal title
-set_title = true
+set_title = false
 
 # Display the time in step titles
 display_time = false
 
 # Cleanup temporary or old files
-cleanup = true
+cleanup = false
 
 # Skip sending a notification at the end of a run
 skip_notify = false
