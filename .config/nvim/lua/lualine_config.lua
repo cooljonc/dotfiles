@@ -30,11 +30,11 @@ local theme = {
 		b = { fg = colors.fg1, bg = colors.bg1 },
 	},
 	replace = {
-		a = { fg = colors.black, bg = colors.magenta, gui = 'bold' },
+		a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
 		b = { fg = colors.fg1, bg = colors.bg1 },
 	},
 	command = {
-		a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
+		a = { fg = colors.black, bg = colors.white, gui = 'bold' },
 		b = { fg = colors.fg1, bg = colors.bg1 },
 	},
 	inactive = {
