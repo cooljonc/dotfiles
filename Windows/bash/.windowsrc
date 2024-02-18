@@ -1,0 +1,12 @@
+# .windowsrc
+# Sets shell functions only meant to be used under Windows
+
+# Set and/or modify os specific environment variables
+os_env_vars() {
+    :
+}
+
+# Set and/or modify os specific aliases
+os_aliases() {
+    :
+}

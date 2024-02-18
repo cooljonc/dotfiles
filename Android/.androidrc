@@ -1,0 +1,16 @@
+# .androidrc
+# Sets shell functions only meant to be used under Android (termux)
+
+# Set and/or modify os specific environment variables
+os_env_vars() {
+    # Add ~/bin to PATH
+    echo "$PATH" | grep -q "$HOME/bin" || export PATH="$HOME/bin:$PATH"
+
+    # Set common user-preference env-vars
+    export EDITOR='nano'
+}
+
+# Set and/or modify os specific aliases
+os_aliases() {
+    :
+}

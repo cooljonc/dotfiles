@@ -1,0 +1,5 @@
+! Xmodmap
+
+! Disable Caps_Lock
+clear lock
+keycode 66 = VoidSymbol NoSymbol VoidSymbol

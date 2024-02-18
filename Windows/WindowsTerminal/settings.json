@@ -1,0 +1,102 @@
+{
+    "actions": [
+        {
+            "command": {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+f4"
+        }
+    ],
+    "confirmCloseAllTabs": false,
+    "copyFormatting": "none",
+    "initialCols": 81,
+    "initialRows": 36,
+    "profiles": {
+        "defaults": {
+            "bellStyle": "none",
+            "colorScheme": "Iceberg Dark",
+            "cursorShape": "filledBox",
+            "font": {
+                "face": "Agave Nerd Font Mono",
+                "size": 15.0
+            },
+            "historySize": 15000,
+            "intenseTextStyle": "none",
+            "padding": "2",
+            "scrollbarState": "hidden",
+            "suppressApplicationTitle": true
+        }
+    },
+    "schemes": [
+        {
+            "background": "#161821",
+            "black": "#1E2132",
+            "blue": "#84A0C6",
+            "brightBlack": "#6B7089",
+            "brightBlue": "#91ACD1",
+            "brightCyan": "#95C4CE",
+            "brightGreen": "#C0CA8E",
+            "brightPurple": "#ADA0D3",
+            "brightRed": "#E98989",
+            "brightWhite": "#D2D4DE",
+            "brightYellow": "#E9B189",
+            "cursorColor": "#C6C8D1",
+            "cyan": "#89B8C2",
+            "foreground": "#C6C8D1",
+            "green": "#B4BE82",
+            "name": "Iceberg Dark",
+            "purple": "#A093C7",
+            "red": "#E27878",
+            "selectionBackground": "#C6C8D1",
+            "white": "#C6C8D1",
+            "yellow": "#E2A478"
+        },
+        {
+            "background": "#e8e9ec",
+            "black": "#33374c",
+            "blue": "#2d539e",
+            "brightBlack": "#262a3f",
+            "brightBlue": "#22478e",
+            "brightCyan": "#327698",
+            "brightGreen": "#598030",
+            "brightPurple": "#6845ad",
+            "brightRed": "#cc3768",
+            "brightWhite": "#8389a3",
+            "brightYellow": "#b6662d",
+            "cursorColor": "#33374c",
+            "cyan": "#3f83a6",
+            "foreground": "#33374c",
+            "green": "#668e3d",
+            "name": "Iceberg Light",
+            "purple": "#7759b4",
+            "red": "#cc517a",
+            "selectionBackground": "#33374c",
+            "white": "#dcdfe7",
+            "yellow": "#c57339"
+        },
+        {
+            "background": "#1F1F28",
+            "black": "#16161D",
+            "blue": "#7E9CD8",
+            "brightBlack": "#727169",
+            "brightBlue": "#7FB4CA",
+            "brightCyan": "#7AA89F",
+            "brightGreen": "#98BB6C",
+            "brightPurple": "#938AA9",
+            "brightRed": "#E82424",
+            "brightWhite": "#DCD7BA",
+            "brightYellow": "#E6C384",
+            "cursorColor": "#DCD7BA",
+            "cyan": "#6A9589",
+            "foreground": "#DCD7BA",
+            "green": "#76946A",
+            "name": "Kanagawa",
+            "purple": "#957FB8",
+            "red": "#C34043",
+            "selectionBackground": "#DCD7BA",
+            "white": "#C8C093",
+            "yellow": "#C0A36E"
+        }
+    ],
+    "theme": "system"
+}

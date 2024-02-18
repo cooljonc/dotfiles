@@ -1,0 +1,7 @@
+# neovide config (config.toml)
+frame = 'full'
+idle = true
+maximized = false
+no-multigrid = false
+srgb = true
+vsync = true

@@ -1,0 +1,23 @@
+# .aliases
+# Sets and/or modifies shell aliases
+
+# Set aliases
+alias cd..='cd ..'
+alias cd.='cd .'
+alias cd-='cd -'
+alias diff='diff --color=auto --tabsize=4'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -a --color=auto'
+alias ll='ls -al --color=auto'
+alias l.='ls -d .* --color=auto'
+alias vim='nvim'
+alias gitcd='cd "$(git rev-parse --show-toplevel)"'
+
+alias dotfiles='dotfiles.sh'
+alias dotfilescd='cd "$(dotfiles.sh rev-parse --show-toplevel)"'
+
+# Run os_aliases function (Set and/or modify os specific aliases)
+type os_aliases 2>/dev/null | head -n 1 | grep -Eq '\sfunction(\s|$)' && os_aliases
+
+:

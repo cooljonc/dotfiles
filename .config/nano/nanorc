@@ -1,0 +1,6 @@
+# nano config (nanorc)
+set autoindent
+set linenumbers
+set minibar
+set tabsize 4
+set tabstospaces

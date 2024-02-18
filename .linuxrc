@@ -1,0 +1,21 @@
+# .linuxrc
+# Sets shell functions only meant to be used under Linux
+
+# Set and/or modify os specific environment variables
+os_env_vars() {
+    # Set util-specific data/config/cache/... location env-vars
+    # - (X11)
+    export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+}
+
+# Set and/or modify os specific aliases
+os_aliases() {
+    :
+}
+
+# If login on first virtual terminal (tty1), start X11 display server
+x11_login() {
+    if [ "$(fgconsole 2>/dev/null)" = '1' ]; then
+        pgrep -x 'Xorg' >/dev/null || startx "$HOME/.config/X11/xinitrc"
+    fi
+}
