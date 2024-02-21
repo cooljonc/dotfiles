@@ -3,6 +3,7 @@
 # Set aliases
 New-Alias ll Get-ChildItem
 New-Alias vim nvim
+New-Alias nvim neovide
 
 # Set aliases with parameters (functions)
 Function gitcd {Set-Location "$(git rev-parse --show-toplevel)"}
