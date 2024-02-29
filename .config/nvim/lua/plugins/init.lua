@@ -84,11 +84,11 @@ local plugins = {
     -- indent-blankline
     {
         'lukas-reineke/indent-blankline.nvim',
-        config = function()
-            require('plugins.indent-blankline').config()
-        end,
         init = function()
             require('plugins.indent-blankline').init()
+        end,
+        config = function()
+            require('plugins.indent-blankline').config()
         end
     },
 
@@ -113,11 +113,11 @@ local plugins = {
     -- nvim-web-devicons
     {
         'nvim-tree/nvim-web-devicons',
-        config = function()
-            require('plugins.nvim-web-devicons').config()
-        end,
         init = function()
             require('plugins.nvim-web-devicons').init()
+        end,
+        config = function()
+            require('plugins.nvim-web-devicons').config()
         end
     },
 

@@ -9,11 +9,6 @@ local opts = {
     strict = false
 }
 
-local function config()
-    require('nvim-web-devicons').setup(opts)
-    require('nvim-web-devicons').set_default_icon('󰈙', vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Normal'), 'fg#'))
-end
-
 local function init()
     vim.api.nvim_create_autocmd('ColorScheme', {
         pattern = '*',
@@ -24,7 +19,12 @@ local function init()
     })
 end
 
+local function config()
+    require('nvim-web-devicons').setup(opts)
+    require('nvim-web-devicons').set_default_icon('󰈙', vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Normal'), 'fg#'))
+end
+
 return {
-    config = config,
-    init = init
+    init = init,
+    config = config
 }

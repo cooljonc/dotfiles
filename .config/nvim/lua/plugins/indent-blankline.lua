@@ -23,10 +23,6 @@ local opts = {
     }
 }
 
-local function config()
-    require('ibl').setup(opts)
-end
-
 local function init()
     -- make LEADER K X toggle whitespace characters and indent-blankline
     vim.keymap.set('', '<Leader>kx', function()
@@ -40,7 +36,11 @@ local function init()
     end)
 end
 
+local function config()
+    require('ibl').setup(opts)
+end
+
 return {
-    config = config,
-    init = init
+    init = init,
+    config = config
 }
