@@ -1,4 +1,5 @@
 # nano config (nanorc)
+set atblanks
 set autoindent
 set linenumbers
 set minibar
