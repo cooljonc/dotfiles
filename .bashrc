@@ -7,7 +7,7 @@
 [[ "$-" != *i* ]] && return
 
 # Set bash history settings
-HISTCONTROL='ignoredups'
+HISTCONTROL='ignoreboth'
 HISTFILE="$HOME/.bash_history"
 HISTFILESIZE=''
 HISTSIZE=''
