@@ -1,6 +1,7 @@
 -- neovim config (config/init.lua)
 
 vim.opt.autoindent = true
+vim.opt.autoread = true
 vim.opt.background = 'dark'
 vim.opt.backspace = 'indent,eol,nostop'
 vim.opt.breakat = ' 	'
@@ -73,8 +74,6 @@ vim.api.nvim_create_autocmd('VimLeave', {
         vim.opt.guicursor = 'a:block-blinkoff550-blinkon550-blinkwait0'
     end
 })
-
----
 
 --- KEYMAPS:
 

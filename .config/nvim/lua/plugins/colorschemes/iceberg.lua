@@ -1,5 +1,8 @@
 -- 'iceberg' config (plugins/colorschemes/iceberg.lua)
 
+--- AUTOCOMMANDS:
+
+-- apply iceberg colorscheme modifications
 vim.api.nvim_create_autocmd('ColorScheme', {
     pattern = 'iceberg',
     callback = function()
@@ -50,3 +53,5 @@ vim.api.nvim_create_autocmd('ColorScheme', {
         end
     end
 })
+
+---

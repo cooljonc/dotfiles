@@ -24,6 +24,8 @@ local opts = {
 }
 
 local function init()
+    --- KEYMAPS:
+
     -- make LEADER K X toggle whitespace characters and indent-blankline
     vim.keymap.set('', '<Leader>kx', function()
         if vim.o.list == false then
@@ -34,6 +36,8 @@ local function init()
             vim.opt.list = false
         end
     end)
+
+    ---
 end
 
 local function config()

@@ -36,8 +36,6 @@ local plugins = {
         end
     },
 
-    ---
-
     --- LSP:
 
     -- mason
@@ -84,12 +82,8 @@ local plugins = {
     -- indent-blankline
     {
         'lukas-reineke/indent-blankline.nvim',
-        init = function()
-            require('plugins.indent-blankline').init()
-        end,
-        config = function()
-            require('plugins.indent-blankline').config()
-        end
+        init = require('plugins.indent-blankline').init,
+        config = require('plugins.indent-blankline').config
     },
 
     -- lualine
@@ -113,12 +107,8 @@ local plugins = {
     -- nvim-web-devicons
     {
         'nvim-tree/nvim-web-devicons',
-        init = function()
-            require('plugins.nvim-web-devicons').init()
-        end,
-        config = function()
-            require('plugins.nvim-web-devicons').config()
-        end
+        init = require('plugins.nvim-web-devicons').init,
+        config = require('plugins.nvim-web-devicons').config
     },
 
     -- virt-column
