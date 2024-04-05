@@ -38,7 +38,7 @@ New-Item -ItemType SymbolicLink -Path "$HOME\.bash_profile" -Target "$DotfilesDi
 New-Item -ItemType SymbolicLink -Path "$HOME\.bashrc" -Target "$DotfilesDir\.bashrc" -Force
 New-Item -ItemType SymbolicLink -Path "$HOME\.envvars" -Target "$DotfilesDir\.envvars" -Force
 New-Item -ItemType SymbolicLink -Path "$HOME\.profile" -Target "$DotfilesDir\.profile" -Force
-New-Item -ItemType SymbolicLink -Path "$HOME\.windowsrc" -Target "$DotfilesDir\Windows\bash\.windowsrc" -Force
+New-Item -ItemType SymbolicLink -Path "$HOME\.osrc" -Target "$DotfilesDir\Windows\.osrc" -Force
 
 # git
 New-Item -ItemType SymbolicLink -Path "$HOME\.gitconfig" -Target "$DotfilesDir\.config\git\config" -Force

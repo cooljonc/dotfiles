@@ -2,22 +2,22 @@
 # Sets and/or modifies shell environment variables
 
 # Add ~/.localscripts to PATH
-echo "$PATH" | grep -q "$HOME/.localscripts" || export PATH="$PATH:$HOME/.localscripts"
+echo "$PATH" | grep -q ~/.localscripts || export PATH="$PATH:$HOME/.localscripts"
 
 # Add ~/.scripts to PATH
-echo "$PATH" | grep -q "$HOME/.scripts" || export PATH="$PATH:$HOME/.scripts"
+echo "$PATH" | grep -q ~/.scripts || export PATH="$PATH:$HOME/.scripts"
 
 # Add ~/.local/bin to PATH
-echo "$PATH" | grep -q "$HOME/.local/bin" || export PATH="$HOME/.local/bin:$PATH"
+echo "$PATH" | grep -q ~/.local/bin || export PATH="$HOME/.local/bin:$PATH"
 
 # Add ~/.cargo/bin to PATH
-echo "$PATH" | grep -q "$HOME/.cargo/bin" || export PATH="$HOME/.cargo/bin:$PATH"
+echo "$PATH" | grep -q ~/.cargo/bin || export PATH="$HOME/.cargo/bin:$PATH"
 
 # Set XDG cache/config/data/... directory location env-vars
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME=~/.cache
+export XDG_CONFIG_HOME=~/.config
+export XDG_DATA_HOME=~/.local/share
+export XDG_STATE_HOME=~/.local/state
 
 # Set locale configuration env-vars
 export LC_COLLATE='C'
@@ -26,10 +26,8 @@ export LC_COLLATE='C'
 export EDITOR='nvim'
 
 # Set util-specific data/config/cache/... location env-vars
-# - (less)
-export LESSHISTFILE='-'
 # - (readline)
-export INPUTRC="$HOME/.config/readline/inputrc"
+export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 
 # Set util-specific application configuration env-vars
 # - (less)
@@ -37,7 +35,7 @@ export LESS='-R --tabs=4'
 # - (pfetch)
 export PF_INFO='ascii title os kernel uptime pkgs shell memory'
 
-# Run os_env_vars function (Set and/or modify os specific env-vars)
-type os_env_vars 2>/dev/null | head -n 1 | grep -Eq '\sfunction(\s|$)' && os_env_vars
+# Run os_envvars function (Set and/or modify os specific env-vars)
+os_envvars
 
 :

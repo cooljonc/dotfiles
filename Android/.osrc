@@ -2,9 +2,9 @@
 # Sets shell functions only meant to be used under Android (termux)
 
 # Set and/or modify os specific environment variables
-os_env_vars() {
+os_envvars() {
     # Add ~/bin to PATH
-    echo "$PATH" | grep -q "$HOME/bin" || export PATH="$HOME/bin:$PATH"
+    echo "$PATH" | grep -q ~/bin || export PATH="$HOME/bin:$PATH"
 
     # Set common user-preference env-vars
     export EDITOR='nano'

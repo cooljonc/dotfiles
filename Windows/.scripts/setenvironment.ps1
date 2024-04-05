@@ -18,8 +18,6 @@ if (($UserPath -like "*$HOME\.scripts;*") -eq $false) {
 [System.Environment]::SetEnvironmentVariable('EDITOR', 'neovide', 'User')
 
 # Set util-specific data/config/cache/... location env-vars
-# - (less)
-[System.Environment]::SetEnvironmentVariable('LESSHISTFILE', '-', 'User')
 # - (readline)
 [System.Environment]::SetEnvironmentVariable('INPUTRC', "$HOME/.config/readline/inputrc", 'User')
 

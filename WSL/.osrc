@@ -2,7 +2,7 @@
 # Sets shell functions only meant to be used under WSL
 
 # Set and/or modify os specific environment variables
-os_env_vars() {
+os_envvars() {
     :
 }
 

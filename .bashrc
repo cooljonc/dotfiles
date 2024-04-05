@@ -8,7 +8,7 @@
 
 # Set bash history settings
 HISTCONTROL='ignoreboth'
-HISTFILE="$HOME/.bash_history"
+HISTFILE=~/.bash_history
 HISTFILESIZE=''
 HISTSIZE=''
 

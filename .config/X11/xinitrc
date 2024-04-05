@@ -13,8 +13,8 @@ fi
 [ -z "$DBUS_SESSION_BUS_ADDRESS" ] && eval "$(dbus-launch --sh-syntax --exit-with-x11)"
 
 # X11 configuration
-xmodmap "$HOME/.config/X11/Xmodmap"
-xrdb -merge "$HOME/.config/X11/Xresources"
+xmodmap "$XDG_CONFIG_HOME/X11/Xmodmap"
+xrdb -merge "$XDG_CONFIG_HOME/X11/Xresources"
 xset r rate 300 45
 xset m 1 1
 xset s off
@@ -28,7 +28,7 @@ done
 unset pointer_id
 
 # Run local xinitrc extension
-[ -f "$HOME/.config/X11/xinitrc_local" ] && . "$HOME/.config/X11/xinitrc_local"
+[ -f "$XDG_CONFIG_HOME/X11/xinitrc_local" ] && . "$XDG_CONFIG_HOME/X11/xinitrc_local"
 
 # Start DE/WM
 export DESKTOP_SESSION=plasma

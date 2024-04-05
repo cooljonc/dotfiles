@@ -2,10 +2,7 @@
 # Sets and/or modifies shell environment
 
 # Source os specific shell functions
-[ -f ~/.linuxrc ] && . ~/.linuxrc
-[ -f ~/.androidrc ] && . ~/.androidrc
-[ -f ~/.windowsrc ] && . ~/.windowsrc
-[ -f ~/.wslrc ] && . ~/.wslrc
+[ -f ~/.osrc ] && . ~/.osrc
 
 # Source .envvars
 [ -f ~/.envvars ] && . ~/.envvars

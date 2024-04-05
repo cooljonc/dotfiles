@@ -27,7 +27,7 @@ if [ "$force" = 1 ]; then
         force_ignore_regex="$(echo "$force_ignore" | sed -E 's/^\^|\$$//g;s/^\/?/\//;s/^/.*/;s/$/($|\/).*/' | sed ':a;N;s/\n/|/;ba')"
     fi
     force_delete="$(find . -depth -mindepth 1 -regextype posix-extended \! -regex "$force_ignore_regex" \! -type d -printf '%P\n')"
-    cd "$HOME" || exit 1
+    cd ~ || exit 1
     IFS="$(printf '\n\t')"
     for f in $force_delete; do
         if [ -L "$f" ]; then
