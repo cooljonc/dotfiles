@@ -15,7 +15,7 @@ if (($UserPath -like "*$HOME\.scripts;*") -eq $false) {
 [System.Environment]::SetEnvironmentVariable('Path', "$UserPath", 'User')
 
 # Set common user-preference env-vars
-[System.Environment]::SetEnvironmentVariable('EDITOR', 'nvim', 'User')
+[System.Environment]::SetEnvironmentVariable('EDITOR', 'neovide', 'User')
 
 # Set util-specific data/config/cache/... location env-vars
 # - (less)

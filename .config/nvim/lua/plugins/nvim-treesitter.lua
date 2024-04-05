@@ -7,13 +7,10 @@ local opts = {
     -- list of parser names (or 'all') to ensure is installed
     ensure_installed = {
         'bash',
-        'c',
-        'cpp',
         'diff',
         'lua',
-        'make',
-        'python',
-        'vim',
+        'markdown',
+        'markdown_inline',
         'vimdoc'
     },
 
