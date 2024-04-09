@@ -26,7 +26,7 @@ vim.opt.mousehide = true
 
 -- set font and functions to change font size
 local guifont_default_size = 15
-local guifont_resize_delta = 1
+local guifont_resize_delta = 1.5
 local guifont_font = 'Agave_Nerd_Font_Mono'
 local guifont_options = '#e-antialias:#h-slight'
 local guifont_size = guifont_size or guifont_default_size
@@ -41,9 +41,10 @@ local function guifont_incsize()
 end
 
 local function guifont_decsize()
-    if guifont_size > guifont_resize_delta then
-        guifont_size = guifont_size - guifont_resize_delta
+    if guifont_resize_delta >= guifont_size then
+        return
     end
+    guifont_size = guifont_size - guifont_resize_delta
     guifont_update()
 end
 
