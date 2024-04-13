@@ -14,6 +14,7 @@
     "profiles": {
         "defaults": {
             "bellStyle": "none",
+            "closeOnExit": "graceful",
             "colorScheme": "Iceberg Dark",
             "cursorShape": "filledBox",
             "font": {
