@@ -27,9 +27,6 @@ for pointer_id in $(xinput list | grep -E '\[slave\s+pointer.*\]' | grep -v 'Vir
 done
 unset pointer_id
 
-# Run local xinitrc extension
-[ -f "$XDG_CONFIG_HOME/X11/xinitrc_local" ] && . "$XDG_CONFIG_HOME/X11/xinitrc_local"
-
 # Start DE/WM
 export DESKTOP_SESSION=plasma
 exec startplasma-x11

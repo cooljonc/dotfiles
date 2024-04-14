@@ -1,11 +1,6 @@
 # Get 'User' Path
 $UserPath = "$([System.Environment]::GetEnvironmentVariable('Path', 'User'))"
 
-# Add ~\.localscripts to 'User' Path
-if (($UserPath -like "*$HOME\.localscripts;*") -eq $false) {
-    $UserPath += "$HOME\.localscripts;"
-}
-
 # Add ~\.scripts to 'User' Path
 if (($UserPath -like "*$HOME\.scripts;*") -eq $false) {
     $UserPath += "$HOME\.scripts;"

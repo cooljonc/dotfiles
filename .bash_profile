@@ -4,6 +4,6 @@
 [ -f ~/.bashrc ] && . ~/.bashrc
 
 # Run x11_login function (linux)
-declare -F 'x11_login' >/dev/null && x11_login
-
-:
+if declare -F 'x11_login' >/dev/null; then
+    x11_login
+fi

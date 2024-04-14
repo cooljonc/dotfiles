@@ -25,5 +25,3 @@ else
     # Append history to history file after command (without starship)
     PROMPT_COMMAND='history -a'
 fi
-
-:

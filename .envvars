@@ -1,9 +1,6 @@
 # .envvars
 # Sets and/or modifies shell environment variables
 
-# Add ~/.localscripts to PATH
-echo "$PATH" | grep -q ~/.localscripts || export PATH="$PATH:$HOME/.localscripts"
-
 # Add ~/.scripts to PATH
 echo "$PATH" | grep -q ~/.scripts || export PATH="$PATH:$HOME/.scripts"
 
@@ -37,5 +34,3 @@ export PF_INFO='ascii title os kernel uptime pkgs shell memory'
 
 # Run os_envvars function (Set and/or modify os specific env-vars)
 os_envvars
-
-:

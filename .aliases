@@ -19,5 +19,3 @@ alias dotfilescd='cd "$(dotfiles.sh rev-parse --show-toplevel)"'
 
 # Run os_aliases function (Set and/or modify os specific aliases)
 os_aliases
-
-:

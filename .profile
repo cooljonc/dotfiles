@@ -22,5 +22,3 @@ tabs -4
 # Set prompt(s)
 PS1='[\u@\h \W]\$ '
 PS2='> '
-
-:
