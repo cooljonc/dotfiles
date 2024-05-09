@@ -1,5 +1,5 @@
-if ((Get-Item $PSScriptRoot).Target) {
-    $ScriptDir = (Get-Item $PSScriptRoot).Target
+if ((Get-Item $PSCommandPath).Target) {
+    $ScriptDir = (Get-Item (Get-Item $PSCommandPath).Target).Directory
 }
 else {
     $ScriptDir = $PSScriptRoot
