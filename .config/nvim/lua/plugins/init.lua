@@ -61,16 +61,6 @@ local plugins = {
         end
     },
 
-    -- flatten
-    {
-        'willothy/flatten.nvim',
-        lazy = false,
-        priority = 1000,
-        config = function()
-            require('flatten').setup()
-        end
-    },
-
     -- gitsigns
     {
         'lewis6991/gitsigns.nvim',

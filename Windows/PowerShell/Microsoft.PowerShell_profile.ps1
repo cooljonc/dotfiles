@@ -15,5 +15,5 @@ try {
 }
 catch {}
 
-# Set prompt (starship)
-Invoke-Expression (& starship.exe init powershell)
+# Set prompt (oh-my-posh)
+Invoke-Expression (& oh-my-posh init pwsh --config "$HOME\.config\oh-my-posh.json")

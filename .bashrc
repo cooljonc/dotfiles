@@ -14,14 +14,5 @@ HISTSIZE=''
 
 # Set prompt(s)
 if [ "$TERM" != 'linux' ]; then
-    # Append history to history file after command (with starship)
-    starship_precmd_user_func_func() {
-        history -a
-    }
-    starship_precmd_user_func='starship_precmd_user_func_func'
-    # Starship prompt
-    eval "$(starship init bash)"
-else
-    # Append history to history file after command (without starship)
-    PROMPT_COMMAND='history -a'
+    eval "$(oh-my-posh init bash --config "$XDG_CONFIG_HOME/oh-my-posh.json")"
 fi

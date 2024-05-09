@@ -68,8 +68,8 @@ New-Item -ItemType SymbolicLink -Path "$HOME\Documents\PowerShell\Microsoft.VSCo
 # readline
 New-Item -ItemType SymbolicLink -Path "$HOME\.config\readline\inputrc" -Target "$DotfilesDir\.config\readline\inputrc" -Force
 
-# starship
-New-Item -ItemType SymbolicLink -Path "$HOME\.config\starship.toml" -Target "$DotfilesDir\.config\starship.toml" -Force
+# oh-my-posh
+New-Item -ItemType SymbolicLink -Path "$HOME\.config\oh-my-posh.json" -Target "$DotfilesDir\.config\oh-my-posh.json" -Force
 
 # topgrade
 New-Item -ItemType SymbolicLink -Path "$HOME\Appdata\Roaming\topgrade.toml" -Target "$DotfilesDir\.config\topgrade.toml" -Force

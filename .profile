@@ -22,3 +22,4 @@ tabs -4
 # Set prompt(s)
 PS1='[\u@\h \W]\$ '
 PS2='> '
+PROMPT_COMMAND='history -a'

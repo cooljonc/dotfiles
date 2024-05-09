@@ -1,0 +1,68 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "version": 2,
+    "final_space": true,
+    "shell_integration": true,
+    "disable_cursor_positioning": false,
+    "patch_pwsh_bleed": true,
+    "disable_notice": true,
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "status",
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": " ",
+                    "foreground": "black",
+                    "background": "red",
+                    "template" : "<b>!</b>"
+                },
+                {
+                    "type": "executiontime",
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": " ",
+                    "foreground": "black",
+                    "background": "yellow",
+                    "properties": {
+                        "threshold": 60000,
+                        "style": "round"
+                    },
+                    "template" : "<b>{{ nospace .FormattedMs }}</b>"
+                },
+                {
+                    "type": "git",
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": " ",
+                    "foreground": "black",
+                    "background": "magenta",
+                    "properties": {
+                        "branch_icon": " ",
+                        "branch_max_length": 0,
+                        "truncate_symbol": "…"
+                    },
+                    "template": "{{ .HEAD }}"
+                },
+                {
+                    "type": "path",
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "foreground": "black",
+                    "background": "lightWhite",
+                    "properties": {
+                        "folder_separator_icon_template": "/",
+                        "home_icon": "~",
+                        "folder_icon": "…",
+                        "style": "full"
+                    },
+                    "template": "{{ .Path }}"
+                }
+            ]
+        }
+    ]
+}
