@@ -16,3 +16,5 @@ HISTSIZE=''
 if [ "$TERM" != 'linux' ]; then
     eval "$(oh-my-posh init bash --config "$XDG_CONFIG_HOME/oh-my-posh.json")"
 fi
+
+:

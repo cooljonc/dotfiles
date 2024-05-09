@@ -41,9 +41,7 @@
                     "foreground": "black",
                     "background": "magenta",
                     "properties": {
-                        "branch_icon": " ",
-                        "branch_max_length": 0,
-                        "truncate_symbol": "…"
+                        "branch_icon": " "
                     },
                     "template": "{{ .HEAD }}"
                 },
@@ -55,12 +53,9 @@
                     "foreground": "black",
                     "background": "lightWhite",
                     "properties": {
-                        "folder_separator_icon_template": "/",
-                        "home_icon": "~",
-                        "folder_icon": "…",
                         "style": "full"
                     },
-                    "template": "{{ .Path }}"
+                    "template": "{{ if .Segments.Git.Dir }}{{ .Path | replace (osDir .Segments.Git.Dir) \"…\" }}{{ else }}{{ .Path }}{{ end }}"
                 }
             ]
         }

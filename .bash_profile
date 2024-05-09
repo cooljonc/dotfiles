@@ -7,3 +7,5 @@
 if declare -F 'x11_login' >/dev/null; then
     x11_login
 fi
+
+:
