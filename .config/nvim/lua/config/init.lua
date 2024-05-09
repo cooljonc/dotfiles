@@ -40,6 +40,7 @@ vim.opt.relativenumber = true
 vim.opt.scrolloff = 2
 vim.opt.shiftround = false
 vim.opt.shiftwidth = 4
+vim.opt.shortmess = 'filnxoOstTIF'
 vim.opt.showmatch = true
 vim.opt.showtabline = 1
 vim.opt.signcolumn = 'auto:1-9'
