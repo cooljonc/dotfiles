@@ -1,10 +1,40 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [
         {
             "command": {
                 "action": "closeTab"
             },
             "keys": "ctrl+f4"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": 1.5
+            },
+            "keys": "ctrl+plus"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": 1.5
+            },
+            "keys": "ctrl+numpad_plus"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": -1.5
+            },
+            "keys": "ctrl+minus"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": -1.5
+            },
+            "keys": "ctrl+numpad_minus"
         }
     ],
     "confirmCloseAllTabs": false,
@@ -30,7 +60,8 @@
             "intenseTextStyle": "none",
             "padding": "0",
             "scrollbarState": "hidden",
-            "suppressApplicationTitle": true
+            "suppressApplicationTitle": true,
+            "useAtlasEngine": true
         }
     },
     "schemes": [
