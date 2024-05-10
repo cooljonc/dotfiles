@@ -9,8 +9,13 @@
     ],
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
-    "initialCols": 81,
-    "initialRows": 36,
+    "initialCols": 90,
+    "initialRows": 40,
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": {
         "defaults": {
             "bellStyle": "none",
@@ -23,7 +28,7 @@
             },
             "historySize": 15000,
             "intenseTextStyle": "none",
-            "padding": "2",
+            "padding": "0",
             "scrollbarState": "hidden",
             "suppressApplicationTitle": true
         }

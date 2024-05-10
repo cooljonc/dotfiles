@@ -30,7 +30,7 @@ if (! $DotfilesDir) {
 }
 
 # .scripts
-foreach ($file in Get-ChildItem "$DotfilesDir\Windows\.scripts") {
+foreach ($file in Get-ChildItem -Attributes !H,H "$DotfilesDir\Windows\.scripts") {
     New-Item -ItemType SymbolicLink -Path "$HOME\.scripts\$file" -Target "$DotfilesDir\Windows\.scripts\$file" -Force
 }
 
