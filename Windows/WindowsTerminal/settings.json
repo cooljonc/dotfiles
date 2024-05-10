@@ -48,7 +48,7 @@
             "name": "Iceberg Dark",
             "purple": "#A093C7",
             "red": "#E27878",
-            "selectionBackground": "#C6C8D1",
+            "selectionBackground": "#272C42",
             "white": "#C6C8D1",
             "yellow": "#E2A478"
         },
@@ -71,7 +71,7 @@
             "name": "Iceberg Light",
             "purple": "#7759b4",
             "red": "#cc517a",
-            "selectionBackground": "#33374c",
+            "selectionBackground": "#C9CDD7",
             "white": "#dcdfe7",
             "yellow": "#c57339"
         },
@@ -94,7 +94,7 @@
             "name": "Kanagawa",
             "purple": "#957FB8",
             "red": "#C34043",
-            "selectionBackground": "#DCD7BA",
+            "selectionBackground": "#223249",
             "white": "#C8C093",
             "yellow": "#C0A36E"
         }

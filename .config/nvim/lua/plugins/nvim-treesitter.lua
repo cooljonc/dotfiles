@@ -7,11 +7,7 @@ local opts = {
     -- list of parser names (or 'all') to ensure is installed
     ensure_installed = {
         'bash',
-        'diff',
-        'lua',
-        'markdown',
-        'markdown_inline',
-        'vimdoc'
+        'lua'
     },
 
     -- highlighting
@@ -26,6 +22,11 @@ local opts = {
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
         -- Instead of true it can also be a list of languages.
         additional_vim_regex_highlighting = false
+    },
+
+    -- indentation
+    indent = {
+        enable = true
     },
 
     -- list of parser names to ignore installing

@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "version": 2,
-    "final_space": true,
+    "final_space": false,
     "shell_integration": true,
     "disable_cursor_positioning": false,
     "patch_pwsh_bleed": true,
@@ -16,8 +16,8 @@
                     "style": "diamond",
                     "leading_diamond": "",
                     "trailing_diamond": " ",
-                    "foreground": "black",
                     "background": "red",
+                    "foreground": "black",
                     "template" : "<b>!</b>"
                 },
                 {
@@ -25,8 +25,8 @@
                     "style": "diamond",
                     "leading_diamond": "",
                     "trailing_diamond": " ",
-                    "foreground": "black",
                     "background": "yellow",
+                    "foreground": "black",
                     "properties": {
                         "threshold": 60000,
                         "style": "round"
@@ -38,8 +38,8 @@
                     "style": "diamond",
                     "leading_diamond": "",
                     "trailing_diamond": " ",
-                    "foreground": "black",
                     "background": "magenta",
+                    "foreground": "black",
                     "properties": {
                         "branch_icon": " "
                     },
@@ -49,9 +49,9 @@
                     "type": "path",
                     "style": "diamond",
                     "leading_diamond": "",
-                    "trailing_diamond": "",
-                    "foreground": "black",
+                    "trailing_diamond": " ",
                     "background": "lightWhite",
+                    "foreground": "black",
                     "properties": {
                         "style": "full"
                     },
@@ -59,5 +59,10 @@
                 }
             ]
         }
-    ]
+    ],
+    "secondary_prompt": {
+        "background": "transparent",
+        "foreground": "lightWhite",
+        "template": " "
+    }
 }

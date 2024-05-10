@@ -48,9 +48,6 @@ New-Item -ItemType SymbolicLink -Path "$HOME\.gitconfig" -Target "$DotfilesDir\.
 # nano
 New-Item -ItemType SymbolicLink -Path "$HOME\.nanorc" -Target "$DotfilesDir\.config\nano\nanorc" -Force
 
-# neofetch
-New-Item -ItemType SymbolicLink -Path "$HOME\.config\neofetch\config.conf" -Target "$DotfilesDir\.config\neofetch\config.conf" -Force
-
 # neovide
 New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Roaming\neovide\config.toml" -Target "$DotfilesDir\.config\neovide\config.toml" -Force
 

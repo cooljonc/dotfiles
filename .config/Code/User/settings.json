@@ -2,7 +2,7 @@
     "--- general settings": "---",
     "editor.bracketPairColorization.enabled": false,
     "editor.colorDecorators": false,
-    "editor.cursorBlinking": "solid",
+    "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "block",
     "editor.cursorSurroundingLines": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",

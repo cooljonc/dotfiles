@@ -1,26 +1,17 @@
 -- neovim config - neovide specific config (config/neovide.lua)
 
-vim.g.neovide_confirm_quit = true
-vim.g.neovide_cursor_animate_command_line = false
-vim.g.neovide_cursor_animate_in_insert_mode = false
 vim.g.neovide_cursor_animation_length = 0.0
-vim.g.neovide_cursor_antialiasing = true
 vim.g.neovide_cursor_unfocused_outline_width = 0.05
-vim.g.neovide_cursor_vfx_mode = ''
 vim.g.neovide_fullscreen = false
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.neovide_input_use_logo = false
 vim.g.neovide_padding_bottom = 0
 vim.g.neovide_padding_left = 0
 vim.g.neovide_padding_right = 0
 vim.g.neovide_padding_top = 0
-vim.g.neovide_profiler = false
-vim.g.neovide_remember_window_position = true
 vim.g.neovide_remember_window_size = true
 vim.g.neovide_scale_factor = 1.0
 vim.g.neovide_scroll_animation_length = 0.0
 vim.g.neovide_transparency = 1.0
-vim.g.neovide_underline_automatic_scaling = false
 vim.opt.linespace = 0
 vim.opt.mousehide = true
 
