@@ -26,7 +26,7 @@ local opts = {
 
     -- indentation
     indent = {
-        enable = true
+        enable = false
     },
 
     -- list of parser names to ignore installing

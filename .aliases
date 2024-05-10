@@ -4,10 +4,10 @@
 # Set aliases
 alias diff='diff --color=auto --tabsize=4'
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
-alias la='ls -a --color=auto'
-alias ll='ls -al --color=auto'
-alias l.='ls -d .* --color=auto'
+alias ls='ls -Fh --color=auto'
+alias la='ls -aFh --color=auto'
+alias ll='ls -aFhl --color=auto'
+alias l.='ls -d .* -Fh --color=auto'
 alias vim='nvim'
 
 # Run os_aliases function (Set and/or modify os specific aliases)

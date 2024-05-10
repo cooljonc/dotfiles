@@ -81,7 +81,7 @@ vim.api.nvim_create_autocmd('VimLeave', {
 -- map the leader key
 vim.g.mapleader = ' '
 
--- disable SPACE and BACKSPACE as movement keys
+-- disable Space and BackSpace as movement keys
 vim.keymap.set({'n', 'o', 'x'}, ' ', '<Nop>')
 vim.keymap.set({'n', 'o', 'x'}, '<S-Space>', '<Nop>')
 vim.keymap.set({'n', 'o', 'x'}, '<BS>', '<Nop>')
@@ -95,12 +95,12 @@ vim.keymap.set('x', 'K', ':m \'<-2<CR>gv=gv')
 vim.keymap.set({'n', 'o', 'x'}, 'n', 'nzv')
 vim.keymap.set({'n', 'o', 'x'}, 'N', 'Nzv')
 
--- make CTRL-L function as SPACE (mirrors CTRL-H functionality)
+-- make CTRL-l function as Space (mirrors CTRL-h functionality)
 vim.keymap.set({'', '!'}, '<C-l>', ' ')
-vim.keymap.set({'', '!'}, '<C-S-l>', '<S-Space>')
+vim.keymap.set({'', '!'}, '<C-S-L>', '<S-Space>')
 
--- make CTRL-SHIFT-C copy the selection without changing cursor position and also copy to system clipboard
-vim.keymap.set('v', '<C-S-c>', '"+ygv<Esc>')
+-- make CTRL-SHIFT-C copy the selection to system clipboard without changing cursor position
+vim.keymap.set('v', '<C-S-C>', '"+ygv<Esc>')
 
 -- make LEADER c and LEADER C also cut to system clipboard
 vim.keymap.set('', '<Leader>c', '"+c')
@@ -135,12 +135,21 @@ vim.keymap.set('', '<Leader>y', '"+y')
 vim.keymap.set('', '<Leader>Y', '"+Y')
 vim.keymap.set('', '<Leader>zy', '"+zy')
 
--- make LEADER K X toggle whitespace characters
-vim.keymap.set('', '<Leader>kx', function()
-    if vim.o.list == false then
-        vim.opt.list = true
+-- make LEADER k s toggle search highlighting
+vim.keymap.set('', '<Leader>ks', function()
+    if vim.v.hlsearch == 1 then
+        vim.cmd.nohlsearch()
     else
+        vim.cmd.set('hlsearch')
+    end
+end)
+
+-- make LEADER k x toggle whitespace characters
+vim.keymap.set('', '<Leader>kx', function()
+    if vim.o.list then
         vim.opt.list = false
+    else
+        vim.opt.list = true
     end
 end)
 
