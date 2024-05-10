@@ -5,9 +5,6 @@ New-Alias ll Get-ChildItem
 New-Alias vim nvim
 New-Alias nvim neovide
 
-# Set aliases with parameters (functions)
-Function dotfilescd {Set-Location "$(dotfiles.ps1 rev-parse --show-toplevel)"}
-
 # Disable predictive intellisense
 try {
     Set-PSReadLineOption -PredictionSource None
