@@ -1,0 +1,64 @@
+# 'Iceberg Light' colorscheme for alacritty (colorschemes/IcebergLight.toml)
+[colors.normal]
+black = '#dcdfe7'
+red = '#cc517a'
+green = '#668e3d'
+yellow = '#c57339'
+blue = '#2d539e'
+magenta = '#7759b4'
+cyan = '#3f83a6'
+white = '#33374c'
+
+[colors.bright]
+black = '#8389a3'
+red = '#cc3768'
+green = '#598030'
+yellow = '#b6662d'
+blue = '#22478e'
+magenta = '#6845ad'
+cyan = '#327698'
+white = '#262a3f'
+
+[colors.dim]
+black = '#dcdfe7'
+red = '#cc517a'
+green = '#668e3d'
+yellow = '#c57339'
+blue = '#2d539e'
+magenta = '#7759b4'
+cyan = '#3f83a6'
+white = '#33374c'
+
+[colors.primary]
+background = '#e8e9ec'
+foreground = '#33374c'
+bright_foreground = 'None'
+dim_foreground = '#33374c'
+
+[colors.cursor]
+cursor = '#33374c'
+text = '#e8e9ec'
+
+[colors.footer_bar]
+background = '#e8e9ec'
+foreground = '#33374c'
+
+[colors.hints]
+start = { background = '#2d539e', foreground = '#e8e9ec' }
+end = { background = '#2d539e', foreground = '#e8e9ec' }
+
+[colors.line_indicator]
+background = '#e8e9ec'
+foreground = '#33374c'
+
+[colors.search]
+matches = { background = '#eac6ad', foreground = '#85512c' }
+focused_match = { background = 'CellForeground', foreground = 'CellBackground' }
+
+[colors.selection]
+background = '#c9cdd7'
+text = 'CellForeground'
+
+[colors.vi_mode_cursor]
+cursor = '#33374c'
+text = '#e8e9ec'

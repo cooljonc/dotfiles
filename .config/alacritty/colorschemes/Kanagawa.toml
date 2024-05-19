@@ -1,0 +1,72 @@
+# 'Kanagawa' colorscheme for alacritty (colorschemes/Kanagawa.toml)
+[colors.normal]
+black = '#16161d'
+red = '#c34043'
+green = '#76946a'
+yellow = '#c0a36e'
+blue = '#7e9cd8'
+magenta = '#957fb8'
+cyan = '#6a9589'
+white = '#c8c093'
+
+[colors.bright]
+black = '#727169'
+red = '#e82424'
+green = '#98bb6c'
+yellow = '#e6c384'
+blue = '#7fb4ca'
+magenta = '#938aa9'
+cyan = '#7aa89f'
+white = '#dcd7ba'
+
+[colors.dim]
+black = '#16161d'
+red = '#c34043'
+green = '#76946a'
+yellow = '#c0a36e'
+blue = '#7e9cd8'
+magenta = '#957fb8'
+cyan = '#6a9589'
+white = '#c8c093'
+
+[colors.primary]
+background = '#1f1f28'
+foreground = '#dcd7ba'
+bright_foreground = 'None'
+dim_foreground = '#dcd7ba'
+
+[[colors.indexed_colors]]
+index = 16
+color = '#ffa066'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#ff5d62'
+
+[colors.cursor]
+cursor = '#dcd7ba'
+text = '#1f1f28'
+
+[colors.footer_bar]
+background = '#1f1f28'
+foreground = '#dcd7ba'
+
+[colors.hints]
+start = { background = '#7fb4ca', foreground = '#1f1f28' }
+end = { background = '#7fb4ca', foreground = '#1f1f28' }
+
+[colors.line_indicator]
+background = '#1f1f28'
+foreground = '#dcd7ba'
+
+[colors.search]
+matches = { background = '#2d4f67', foreground = '#dcd7ba' }
+focused_match = { background = '#ff9e3b', foreground = '#223249' }
+
+[colors.selection]
+background = '#223249'
+text = 'CellForeground'
+
+[colors.vi_mode_cursor]
+cursor = '#dcd7ba'
+text = '#1f1f28'

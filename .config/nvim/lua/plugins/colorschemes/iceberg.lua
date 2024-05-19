@@ -9,6 +9,7 @@ vim.api.nvim_create_autocmd('ColorScheme', {
         if vim.o.background ~= 'light' then
             vim.cmd([[
                 " editor
+                highlight CurSearch guibg=#e4aa80 guifg=#392313 gui=bold
                 highlight CursorLineNr guibg=none guifg=#cdd1e6
                 highlight DiagnosticSignError guibg=none guifg=#e27878
                 highlight DiagnosticSignHint guibg=none guifg=#6b7089
@@ -31,6 +32,7 @@ vim.api.nvim_create_autocmd('ColorScheme', {
         else
             vim.cmd([[
                 " editor
+                highlight CurSearch guibg=#eac6ad guifg=#85512c gui=bold
                 highlight CursorLineNr guibg=none guifg=#576a9e
                 highlight DiagnosticSignError guibg=none guifg=#cc517a
                 highlight DiagnosticSignHint guibg=none guifg=#8389a3

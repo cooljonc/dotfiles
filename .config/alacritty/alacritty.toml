@@ -1,0 +1,95 @@
+# alacritty config (alacritty.toml)
+import = ['~/.config/alacritty/colorschemes/IcebergDark.toml']
+ipc_socket = true
+live_config_reload = true
+#shell = { program = '', args = [] }
+working_directory = 'None'
+
+[bell]
+animation = 'Linear'
+#color = '#ffffff'
+command = 'None'
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = false
+transparent_background_colors = false
+
+[cursor]
+blink_interval = 550
+blink_timeout = 0
+style = { shape = 'Block', blinking = 'On' }
+thickness = 0.05
+unfocused_hollow = true
+vi_mode_style = 'None'
+
+[font]
+normal = { family = 'Agave Nerd Font Mono', style = 'Regular' }
+bold = { family = 'Agave Nerd Font Mono', style = 'Bold' }
+italic = { family = 'Agave Nerd Font Mono', style = 'Italic' }
+bold_italic = { family = 'Agave Nerd Font Mono', style = 'Bold Italic' }
+builtin_box_drawing = false
+glyph_offset = { x = 0, y = 0 }
+offset = { x = 0, y = 0 }
+size = 15.0
+
+[hints]
+alphabet = 'jfkdls;ahgurieowpq'
+
+[[hints.enabled]]
+binding = { key = "U", mods = "Control|Shift" }
+command = "xdg-open"
+hyperlinks = true
+mouse = { mods = 'Control', enabled = true }
+persist = false
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[keyboard]
+bindings = [
+{ key = '0', mods = 'Control', Action = 'ResetFontSize' },
+{ key = '=', mods = 'Control', Action = 'IncreaseFontSize' },
+{ key = '=', mods = 'Control', Action = 'IncreaseFontSize' },
+{ key = '+', mods = 'Control|Shift', Action = 'IncreaseFontSize' },
+{ key = '+', mods = 'Control|Shift', Action = 'IncreaseFontSize' },
+{ key = 'NumpadAdd', mods = 'Control', Action = 'IncreaseFontSize' },
+{ key = 'NumpadAdd', mods = 'Control', Action = 'IncreaseFontSize' },
+{ key = '-', mods = 'Control', Action = 'DecreaseFontSize' },
+{ key = '-', mods = 'Control', Action = 'DecreaseFontSize' },
+{ key = '_', mods = 'Control|Shift', Action = 'DecreaseFontSize' },
+{ key = '_', mods = 'Control|Shift', Action = 'DecreaseFontSize' },
+{ key = 'NumpadSubtract', mods = 'Control', Action = 'DecreaseFontSize' },
+{ key = 'NumpadSubtract', mods = 'Control', Action = 'DecreaseFontSize' },
+{ key = 'Enter', mods = 'Control|Shift', Action = 'CreateNewWindow' },
+{ key = 'F11', action = 'ToggleFullscreen' }
+]
+
+[mouse]
+hide_when_typing = true
+bindings = []
+
+[scrolling]
+history = 15000
+multiplier = 3
+
+[selection]
+save_to_clipboard = false
+#semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[terminal]
+osc52 = 'CopyPaste'
+
+[window]
+blur = false
+#class = { instance = 'Alacritty', general = 'Alacritty' }
+decorations = 'Full'
+decorations_theme_variant = 'None'
+dimensions = { columns = 90, lines = 36 }
+dynamic_padding = true
+dynamic_title = true
+opacity = 1.0
+padding = { x = 0, y = 0 }
+position = 'None'
+resize_increments = false
+startup_mode = 'Windowed'
+#title = 'Alacritty'
