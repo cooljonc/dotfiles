@@ -2,6 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "version": 2,
     "final_space": false,
+    "pwd": "{{ if eq .OS \"windows\" }}osc99{{ else }}osc7{{ end }}",
     "shell_integration": true,
     "disable_cursor_positioning": false,
     "patch_pwsh_bleed": true,

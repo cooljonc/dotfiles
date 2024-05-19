@@ -4,12 +4,6 @@
     "actions": [
         {
             "command": {
-                "action": "closeTab"
-            },
-            "keys": "ctrl+f4"
-        },
-        {
-            "command": {
                 "action": "adjustFontSize",
                 "delta": 1.5
             },
@@ -35,6 +29,20 @@
                 "delta": -1.5
             },
             "keys": "ctrl+numpad_minus"
+        },
+        {
+            "command": {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+f4"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+enter"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+d"
         }
     ],
     "confirmCloseAllTabs": false,
