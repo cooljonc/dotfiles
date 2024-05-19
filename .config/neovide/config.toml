@@ -1,4 +1,5 @@
 # neovide config (config.toml)
+fork = true
 frame = 'full'
 idle = true
 maximized = false
