@@ -7,7 +7,8 @@ local opts = {
     -- list of parser names (or 'all') to ensure is installed
     ensure_installed = {
         'bash',
-        'lua'
+        'lua',
+        'vimdoc'
     },
 
     -- highlighting
