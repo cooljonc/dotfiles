@@ -93,7 +93,7 @@
             "name": "Iceberg Dark",
             "purple": "#A093C7",
             "red": "#E27878",
-            "selectionBackground": "#4A5482",
+            "selectionBackground": "#272C42",
             "white": "#C6C8D1",
             "yellow": "#E2A478"
         },
@@ -116,7 +116,7 @@
             "name": "Iceberg Light",
             "purple": "#7759B4",
             "red": "#CC517A",
-            "selectionBackground": "#AEB2C6",
+            "selectionBackground": "#C9CDD7",
             "white": "#DCDFE7",
             "yellow": "#C57339"
         },
