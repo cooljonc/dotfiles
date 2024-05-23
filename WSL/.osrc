@@ -1,4 +1,5 @@
-# .wslrc
+# vim: filetype=sh
+# .osrc
 # Sets shell functions only meant to be used under WSL
 
 # Set and/or modify os specific environment variables

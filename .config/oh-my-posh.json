@@ -4,7 +4,7 @@
     "final_space": false,
     "pwd": "{{ if eq .OS \"windows\" }}osc99{{ else }}osc7{{ end }}",
     "shell_integration": true,
-    "disable_cursor_positioning": false,
+    "disable_cursor_positioning": true,
     "patch_pwsh_bleed": true,
     "disable_notice": true,
     "blocks": [
