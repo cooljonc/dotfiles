@@ -19,15 +19,14 @@ local function theme(colorscheme)
 
     -- iceberg
     if colorscheme == 'iceberg' then
+        theme.normal.c.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Comment'), 'fg#')
         if vim.o.background ~= 'light' then
             theme.normal.a.bg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Normal'), 'fg#')
-            theme.normal.b.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Normal'), 'fg#')
-            theme.insert.b.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Function'), 'fg#')
-            theme.replace.b.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Constant'), 'fg#')
-            theme.visual.b.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Special'), 'fg#')
+            theme.normal.b.fg = theme.normal.a.bg
+            theme.insert.b.fg = theme.insert.a.bg
+            theme.replace.b.fg = theme.replace.a.bg
+            theme.visual.b.fg = theme.visual.a.bg
         end
-        theme.normal.c.fg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Comment'), 'fg#')
-        theme.replace.a.bg = vim.fn.synIDattr(vim.api.nvim_get_hl_id_by_name('Constant'), 'fg#')
     end
 
     return theme

@@ -1,5 +1,4 @@
 {
-    "--- general settings": "---",
     "editor.bracketPairColorization.enabled": false,
     "editor.colorDecorators": false,
     "editor.cursorBlinking": "blink",
@@ -19,6 +18,7 @@
     "editor.rulers": [80],
     "editor.selectionHighlight": false,
     "editor.stickyTabStops": true,
+    "editor.suggest.showWords": false,
     "editor.wordWrapColumn": 80,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
@@ -152,7 +152,6 @@
     "window.commandCenter": false,
     "window.customMenuBarAltFocus": false,
 
-    "--- extension settings": "---",
     "color-highlight.languages": ["*", "!html"],
     "color-highlight.markerType": "background",
     "color-highlight.markRuler": false,
@@ -165,7 +164,6 @@
     "prettier.tabWidth": 4,
     "redhat.telemetry.enabled": false,
 
-    "--- language specific settings": "---",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -174,7 +172,5 @@
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-
-    "---": "---"
+    }
 }

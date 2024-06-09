@@ -37,7 +37,7 @@ size = 15.0
 alphabet = 'jfkdls;ahgurieowpq'
 
 [[hints.enabled]]
-binding = { key = "U", mods = "Control|Shift" }
+binding = { key = "H", mods = "Control|Shift" }
 command = "xdg-open"
 hyperlinks = true
 mouse = { mods = 'Control', enabled = true }
@@ -47,20 +47,28 @@ regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:
 
 [keyboard]
 bindings = [
-{ key = '0', mods = 'Control', Action = 'ResetFontSize' },
-{ key = '=', mods = 'Control', Action = 'IncreaseFontSize' },
-{ key = '=', mods = 'Control', Action = 'IncreaseFontSize' },
-{ key = '+', mods = 'Control|Shift', Action = 'IncreaseFontSize' },
-{ key = '+', mods = 'Control|Shift', Action = 'IncreaseFontSize' },
-{ key = 'NumpadAdd', mods = 'Control', Action = 'IncreaseFontSize' },
-{ key = 'NumpadAdd', mods = 'Control', Action = 'IncreaseFontSize' },
-{ key = '-', mods = 'Control', Action = 'DecreaseFontSize' },
-{ key = '-', mods = 'Control', Action = 'DecreaseFontSize' },
-{ key = '_', mods = 'Control|Shift', Action = 'DecreaseFontSize' },
-{ key = '_', mods = 'Control|Shift', Action = 'DecreaseFontSize' },
-{ key = 'NumpadSubtract', mods = 'Control', Action = 'DecreaseFontSize' },
-{ key = 'NumpadSubtract', mods = 'Control', Action = 'DecreaseFontSize' },
-{ key = 'Enter', mods = 'Control|Shift', Action = 'CreateNewWindow' },
+{ key = 'Y', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollLineUp' },
+{ key = 'E', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollLineDown' },
+{ key = 'B', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollPageUp' },
+{ key = 'F', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollPageDown' },
+{ key = 'U', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollHalfPageUp' },
+{ key = 'D', mods = 'Control|Shift', mode = '~Alt', action = 'ScrollHalfPageDown' },
+{ key = '/', mods = 'Control', mode = '~Alt|~Search', action = 'SearchForward' },
+{ key = '?', mods = 'Control|Shift', mode = '~Alt|~Search', action = 'SearchBackward' },
+{ key = '0', mods = 'Control', action = 'ResetFontSize' },
+{ key = '=', mods = 'Control', action = 'IncreaseFontSize' },
+{ key = '=', mods = 'Control', action = 'IncreaseFontSize' },
+{ key = '+', mods = 'Control|Shift', action = 'IncreaseFontSize' },
+{ key = '+', mods = 'Control|Shift', action = 'IncreaseFontSize' },
+{ key = 'NumpadAdd', mods = 'Control', action = 'IncreaseFontSize' },
+{ key = 'NumpadAdd', mods = 'Control', action = 'IncreaseFontSize' },
+{ key = '-', mods = 'Control', action = 'DecreaseFontSize' },
+{ key = '-', mods = 'Control', action = 'DecreaseFontSize' },
+{ key = '_', mods = 'Control|Shift', action = 'DecreaseFontSize' },
+{ key = '_', mods = 'Control|Shift', action = 'DecreaseFontSize' },
+{ key = 'NumpadSubtract', mods = 'Control', action = 'DecreaseFontSize' },
+{ key = 'NumpadSubtract', mods = 'Control', action = 'DecreaseFontSize' },
+{ key = 'Enter', mods = 'Control|Shift', action = 'CreateNewWindow' },
 { key = 'F11', action = 'ToggleFullscreen' }
 ]
 

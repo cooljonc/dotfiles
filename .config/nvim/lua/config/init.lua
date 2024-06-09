@@ -28,7 +28,7 @@ vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.incsearch = true
 vim.opt.joinspaces = false
-vim.opt.linebreak = true
+vim.opt.linebreak = false
 vim.opt.list = false
 vim.opt.listchars = 'eol:↵,nbsp:,space:⋅,tab:→ '
 vim.opt.modeline = true
@@ -102,9 +102,6 @@ vim.keymap.set({'n', 'o', 'x'}, 'N', 'Nzv')
 vim.keymap.set({'', '!'}, '<C-l>', ' ')
 vim.keymap.set({'', '!'}, '<C-S-L>', '<S-Space>')
 
--- make CTRL-SHIFT-C copy the selection to system clipboard without changing cursor position
-vim.keymap.set('v', '<C-S-C>', '"+ygv<Esc>')
-
 -- make LEADER c and LEADER C also cut to system clipboard
 vim.keymap.set('', '<Leader>c', '"+c')
 vim.keymap.set('', '<Leader>C', '"+C')
@@ -153,6 +150,15 @@ vim.keymap.set('', '<Leader>kx', function()
         vim.opt.list = false
     else
         vim.opt.list = true
+    end
+end)
+
+-- make LEADER k w toggle line wrapping
+vim.keymap.set('', '<Leader>kw', function()
+    if vim.o.wrap then
+        vim.opt.wrap = false
+    else
+        vim.opt.wrap = true
     end
 end)
 
