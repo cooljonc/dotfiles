@@ -160,9 +160,7 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "Lua.window.statusBar": false,
     "powershell.promptToUpdatePowerShell": false,
-    "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    "redhat.telemetry.enabled": false,
 
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
