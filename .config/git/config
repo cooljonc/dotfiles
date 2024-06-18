@@ -2,6 +2,8 @@
     pager = cat
 [init]
     defaultBranch = main
+[safe]
+    directory = *
 [user]
     name = cooljonc
     email = 91816521+cooljonc@users.noreply.github.com
