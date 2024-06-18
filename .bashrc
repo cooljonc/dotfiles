@@ -7,10 +7,8 @@
 [[ "$-" != *i* ]] && return
 
 # Set bash history settings
-HISTCONTROL='ignoreboth'
-HISTFILE=~/.bash_history
-HISTFILESIZE=''
-HISTSIZE=''
+HISTCONTROL='erasedups:ignoreboth'
+HISTSIZE=
 
 # Set prompt(s)
 if [ "$TERM" != 'linux' ]; then

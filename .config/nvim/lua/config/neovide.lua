@@ -14,39 +14,30 @@ vim.g.neovide_scroll_animation_length = 0.0
 vim.g.neovide_text_gamma = 1.1
 vim.g.neovide_text_contrast = 0.1
 vim.g.neovide_transparency = 1.0
+vim.opt.guifont = 'Agave_Nerd_Font_Mono:h15:#e-antialias:#h-slight'
 vim.opt.linespace = 0
 vim.opt.mousehide = true
 
--- set font and functions to change font size
-local guifont_default_size = 15
-local guifont_resize_delta = 1.5
-local guifont_font = 'Agave_Nerd_Font_Mono'
-local guifont_options = '#e-antialias:#h-slight'
-local guifont_size = guifont_size or guifont_default_size
+-- set functions to change gui scaling
+local scale_resize_delta = 0.1
 
-local function guifont_update()
-    vim.opt.guifont = string.format('%s:h%d:%s', guifont_font, guifont_size, guifont_options)
+local function gui_incscale()
+    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + scale_resize_delta
+    vim.cmd.mode()
 end
 
-local function guifont_incsize()
-    guifont_size = guifont_size + guifont_resize_delta
-    guifont_update()
-end
-
-local function guifont_decsize()
-    if guifont_resize_delta >= guifont_size then
+local function gui_decscale()
+    if vim.g.neovide_scale_factor <= scale_resize_delta + 0.01 then
         return
     end
-    guifont_size = guifont_size - guifont_resize_delta
-    guifont_update()
+    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - scale_resize_delta
+    vim.cmd.mode()
 end
 
-local function guifont_reset()
-    guifont_size = guifont_default_size
-    guifont_update()
+local function gui_resetscale()
+    vim.g.neovide_scale_factor = 1.0
+    vim.cmd.mode()
 end
-
-guifont_update()
 
 --- KEYMAPS:
 
@@ -56,15 +47,15 @@ vim.keymap.set({'', '!', 't'}, '<C-S-v>', function()
 end)
 
 -- make CTRL-= and CTRL-+ increase font size
-vim.keymap.set({'', '!', 't'}, '<C-=>', function() guifont_incsize() end)
-vim.keymap.set({'', '!', 't'}, '<C-+>', function() guifont_incsize() end)
+vim.keymap.set({'', '!', 't'}, '<C-=>', gui_incscale)
+vim.keymap.set({'', '!', 't'}, '<C-+>', gui_incscale)
 
 -- make CTRL-- and CTRL-_ decrease font size
-vim.keymap.set({'', '!', 't'}, '<C-->', function() guifont_decsize() end)
-vim.keymap.set({'', '!', 't'}, '<C-_>', function() guifont_decsize() end)
+vim.keymap.set({'', '!', 't'}, '<C-->', gui_decscale)
+vim.keymap.set({'', '!', 't'}, '<C-_>', gui_decscale)
 
 -- make CTRL-0 reset font size
-vim.keymap.set({'', '!', 't'}, '<C-0>', function() guifont_reset() end)
+vim.keymap.set({'', '!', 't'}, '<C-0>', gui_resetscale)
 
 -- make F11 toggle fullscreen mode
 vim.keymap.set({'', '!', 't'}, '<F11>', function()
