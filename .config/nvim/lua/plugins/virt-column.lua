@@ -1,7 +1,7 @@
 -- 'virt-column' config (plugins/virt-column.lua)
 
 local opts = {
-    char = '▕',
+    char = '▏',
     enabled = true,
     highlight = 'VirtColumn',
     virtcolumn = ''
