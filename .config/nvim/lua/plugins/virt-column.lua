@@ -10,6 +10,8 @@ local opts = {
 return {
     {
         'lukas-reineke/virt-column.nvim',
-        opts = opts
+        config = function()
+            require('virt-column').setup(opts)
+        end
     }
 }

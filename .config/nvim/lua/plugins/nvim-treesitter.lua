@@ -70,7 +70,11 @@ local opts = {
 return {
     {
         'nvim-treesitter/nvim-treesitter',
-        build = ':TSUpdate',
-        opts = opts
+        build = function()
+            require('nvim-treesitter.install').update({ with_sync = true })()
+        end,
+        config = function()
+            require('nvim-treesitter.configs').setup(opts)
+        end
     }
 }

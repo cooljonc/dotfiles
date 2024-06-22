@@ -20,6 +20,8 @@ return {
             'williamboman/mason-lspconfig.nvim'
         },
         build = ':MasonUpdate',
-        opts = opts
+        config = function()
+            require('mason').setup(opts)
+        end
     }
 }

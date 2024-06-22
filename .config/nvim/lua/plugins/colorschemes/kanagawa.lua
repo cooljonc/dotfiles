@@ -57,6 +57,8 @@ local opts = {
 return {
     {
         'rebelot/kanagawa.nvim',
-        opts = opts
+        config = function()
+            require('kanagawa').setup(opts)
+        end
     }
 }
