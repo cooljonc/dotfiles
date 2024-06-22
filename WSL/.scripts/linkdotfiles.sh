@@ -1,1 +1,0 @@
-../../.scripts/linkdotfiles.sh
