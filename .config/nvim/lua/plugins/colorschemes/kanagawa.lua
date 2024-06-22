@@ -54,4 +54,9 @@ local opts = {
     undercurl = true
 }
 
-require('kanagawa').setup(opts)
+return {
+    {
+        'rebelot/kanagawa.nvim',
+        opts = opts
+    }
+}

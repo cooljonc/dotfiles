@@ -30,8 +30,6 @@ export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 # Set util-specific application configuration env-vars
 # - (less)
 export LESS='-R --tabs=4'
-# - (pfetch)
-export PF_INFO='ascii title os kernel uptime pkgs shell memory'
 
 # Run os_envvars function (Set and/or modify os specific env-vars)
 os_envvars

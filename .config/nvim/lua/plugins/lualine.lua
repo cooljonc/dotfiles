@@ -1,9 +1,9 @@
 -- 'lualine' config (plugins/lualine.lua)
 
-local load_theme = require('lualine.utils.loader').load_theme
-
 -- load & customize/edit themes
 local function theme(colorscheme)
+    local load_theme = require('lualine.utils.loader').load_theme
+
     local ok, theme = pcall(load_theme, colorscheme:gsub('-', '_'))
     if not ok then
         ok, theme = pcall(load_theme, colorscheme)
@@ -107,4 +107,10 @@ local opts = {
     extensions = {}
 }
 
-require('lualine').setup(opts)
+return {
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        opts = opts
+    }
+}

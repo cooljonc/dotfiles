@@ -7,4 +7,9 @@ local opts = {
     virtcolumn = ''
 }
 
-require('virt-column').setup(opts)
+return {
+    {
+        'lukas-reineke/virt-column.nvim',
+        opts = opts
+    }
+}

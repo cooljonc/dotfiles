@@ -4,7 +4,7 @@
 require('config')
 
 -- plugins
-require('plugins')
+require('lazy_init')
 
 -- colorscheme
 vim.cmd.colorscheme('iceberg')

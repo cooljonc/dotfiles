@@ -67,4 +67,10 @@ local opts = {
     sync_install = false
 }
 
-require('nvim-treesitter.configs').setup(opts)
+return {
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+        opts = opts
+    }
+}

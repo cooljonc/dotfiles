@@ -132,7 +132,7 @@ vim.keymap.set('', '<Leader>X', '"+X')
 
 -- make all LEADER `yank` commands also copy to system clipboard
 vim.keymap.set('', '<Leader>y', '"+y')
-vim.keymap.set('', '<Leader>Y', '"+Y')
+vim.keymap.set('', '<Leader>Y', '"+y$')
 vim.keymap.set('', '<Leader>zy', '"+zy')
 
 -- make LEADER k s toggle search highlighting

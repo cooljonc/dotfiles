@@ -12,4 +12,14 @@ local opts = {
     }
 }
 
-require('mason').setup(opts)
+return {
+    {
+        'williamboman/mason.nvim',
+        dependencies = {
+            'neovim/nvim-lspconfig',
+            'williamboman/mason-lspconfig.nvim'
+        },
+        build = ':MasonUpdate',
+        opts = opts
+    }
+}

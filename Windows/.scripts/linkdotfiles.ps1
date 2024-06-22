@@ -53,11 +53,9 @@ New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Roaming\neovide\config.toml
 
 # neovim
 New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Local\nvim\init.lua" -Target "$DotfilesDir\.config\nvim\init.lua" -Force
-New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Local\nvim\lua\config" -Target "$DotfilesDir\.config\nvim\lua\config" -Force
-New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Local\nvim\lua\plugins" -Target "$DotfilesDir\.config\nvim\lua\plugins" -Force
+New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Local\nvim\lua" -Target "$DotfilesDir\.config\nvim\lua" -Force
 New-Item -ItemType SymbolicLink -Path "$HOME\.config\nvim\init.lua" -Target "$DotfilesDir\.config\nvim\init.lua" -Force
-New-Item -ItemType SymbolicLink -Path "$HOME\.config\nvim\lua\config" -Target "$DotfilesDir\.config\nvim\lua\config" -Force
-New-Item -ItemType SymbolicLink -Path "$HOME\.config\nvim\lua\plugins" -Target "$DotfilesDir\.config\nvim\lua\plugins" -Force
+New-Item -ItemType SymbolicLink -Path "$HOME\.config\nvim\lua" -Target "$DotfilesDir\.config\nvim\lua" -Force
 
 # powershell
 New-Item -ItemType SymbolicLink -Path "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Target "$DotfilesDir\Windows\PowerShell\Microsoft.PowerShell_profile.ps1" -Force

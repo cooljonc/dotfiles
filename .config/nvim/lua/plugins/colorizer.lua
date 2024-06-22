@@ -27,4 +27,9 @@ local opts = {
     }
 }
 
-require('colorizer').setup(opts)
+return {
+    {
+        'NvChad/nvim-colorizer.lua',
+        opts = opts
+    }
+}
